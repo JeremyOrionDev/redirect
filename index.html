@@ -14,10 +14,23 @@
     <div id="example"></div>
 
 <script type="text/javascript">
-
+  var text="<meta http-equiv="
+  text+="refresh"
+  text+=" content="
+  text+="; URL='"
+  text+="http://www.google.com"+">"
 if(navigator.platform=="iPhone"){
-  $("head").append('
-<meta http-equiv="refresh" content="5; URL=http://www.google.com">')
+  $("head").append(text)
+}
+else  {
+  $("head").append(text)
+}
+
+$text="<meta http-equiv='refresh' content=; URL="http://www.google.com">
+if(navigator.platform=="iPhone"){
+  
+  $("head").append("
+')
 }
 else  {
   $("head").append('
