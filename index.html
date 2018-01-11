@@ -15,23 +15,18 @@
 
 <script type="text/javascript">
 
-txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
-txt+= "<p>Browser Name: " + navigator.appName + "</p>";
-txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
-txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
-txt+= "<p>Platform: " + navigator.platform + "</p>";
-txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
+if(navigator.platform=="iPhone"){
+  $("head").append('
+<meta http-equiv="refresh" content="5; URL=http://www.google.com">')
+}
+else  {
+  $("head").append('
+<meta http-equiv="refresh" content="5; URL=http://www.google.com">')
+}
 
-document.getElementById("example").innerHTML=txt;
 
 </script>
-    <script type="text/javascript">
-    // $txt ="<p>Browser code name = "+navigator.appCodeName+"<p>";
-    // txt+="<p>Browser name = "+navigator.appName+"<p>";
-    // txt+="<p>Browser version = "+navigator.appVersion+"<p>";
-    // txt+="<p>platform name = "+navigator.platform+"<p>";
-    $("#test").append("coucou");
-</script>
+
 <script
 src="https://code.jquery.com/jquery-3.2.1.js"
 integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
