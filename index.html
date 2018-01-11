@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title> Test redirection</title>
-    https://itunes.apple.com/fr/app/facebook/id284882215?mt=8
+    <!-- https://itunes.apple.com/fr/app/facebook/id284882215?mt=8 -->
 
   </head>
 
@@ -11,12 +11,26 @@
     <div id="test">
 
     </div>
+    <div id="example"></div>
+
+<script type="text/javascript">
+
+txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+txt+= "<p>Platform: " + navigator.platform + "</p>";
+txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
+
+document.getElementById("example").innerHTML=txt;
+
+</script>
     <script type="text/javascript">
-    var txt ="<p>Browser code name = "+navigator.appCodeName+"<p>";
-    txt+="<p>Browser name = "+navigator.appName+"<p>";
-    txt+="<p>Browser version = "+navigator.appVersion+"<p>";
-    txt+="<p>platform name = "+navigator.platform+"<p>";
-    document.getElementById('test').innerHtml(txt);
+    // $txt ="<p>Browser code name = "+navigator.appCodeName+"<p>";
+    // txt+="<p>Browser name = "+navigator.appName+"<p>";
+    // txt+="<p>Browser version = "+navigator.appVersion+"<p>";
+    // txt+="<p>platform name = "+navigator.platform+"<p>";
+    $("#test").append("coucou");
 </script>
 <script
 src="https://code.jquery.com/jquery-3.2.1.js"
