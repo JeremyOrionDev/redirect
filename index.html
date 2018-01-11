@@ -9,11 +9,11 @@
 
       if (navigator.platform.includes("iPhone")) 
       {
-        location.href="https://itunes.apple.com/fr/app/facebook/id284882215?mt=8";
-      history.pushState("http://mi-app.fr/", "new title", "newURL");
-      } else {
-        location.href="https://play.google.com/store/apps/details?id=com.miapplication.android";
         history.pushState("http://mi-app.fr/", "new title", "newURL");
+        location.href="https://itunes.apple.com/fr/app/facebook/id284882215?mt=8";      
+      } else {
+        history.pushState("http://mi-app.fr/", "new title", "newURL");
+        location.href="https://play.google.com/store/apps/details?id=com.miapplication.android";        
         }
 
 //   if(navigator.appVersion.includes("iPhone")){
