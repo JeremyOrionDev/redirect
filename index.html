@@ -6,15 +6,16 @@
   </head>
   <body>
 <script type="text/javascript">
-  if(navigator.appVersion.includes("iPhone")){
-  setTimeout(function() {
-  window.location.href = "https://itunes.apple.com/fr/app/mi-application-de-rencontre/id1279238907?mt=8";
-}, 3);}
-  else{
-  setTimeout(function() {
-  window.location.href = "https://play.google.com/store/apps/details?id=com.miapplication.android";
-}, 3);}
-  }
+
+      if (navigator.platform.includes("iPhone")) 
+      {
+        location.href="https://itunes.apple.com/fr/app/facebook/id284882215?mt=8";
+      history.pushState("http://mi-app.fr/", "new title", "newURL");
+      } else {
+        location.href="https://play.google.com/store/apps/details?id=com.miapplication.android";
+        history.pushState("http://mi-app.fr/", "new title", "newURL");
+        }
+
 //   if(navigator.appVersion.includes("iPhone")){
 //     document.location.href="https://itunes.apple.com/fr/app/mi-application-de-rencontre/id1279238907?mt=8"
 //   } else document.location.href="https://play.google.com/store/apps/details?id=com.miapplication.android"
