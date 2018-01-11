@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Mi application</title>
-  
-
   </head>
-<frameset rows=”100%” cols=”*” border=”0″ framespacing=”0″ frameborder=no>
-
-  <frame src=”https://play.google.com/store/apps/details?id=com.miapplication.android” SCROLLING=”yes”>
-  
-  </frameset>
   <body>
 <script type="text/javascript">
+  if(navigator.appVersion.includes("iPhone")){
+  setTimeout(function() {
+  window.location.href = "https://itunes.apple.com/fr/app/mi-application-de-rencontre/id1279238907?mt=8";
+}, 3);}
+  else{
+  setTimeout(function() {
+  window.location.href = "https://play.google.com/store/apps/details?id=com.miapplication.android";
+}, 3);}
+  }
 //   if(navigator.appVersion.includes("iPhone")){
 //     document.location.href="https://itunes.apple.com/fr/app/mi-application-de-rencontre/id1279238907?mt=8"
 //   } else document.location.href="https://play.google.com/store/apps/details?id=com.miapplication.android"
